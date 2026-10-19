@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vidmate – Windows Video Downloader</title>
+  <meta name="description"
+    content="Vidmate is a Windows desktop app for downloading supported videos. Paste a link, choose your options and download." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://[YOUR-DOMAIN]/index.html" />
+  <meta property="og:title" content="Vidmate – Windows Video Downloader" />
+  <meta property="og:description"
+    content="Vidmate is a Windows desktop app for downloading supported videos. Paste a link, choose your options and download." />
+  <meta property="og:url" content="https://[YOUR-DOMAIN]/index.html" />
+  <meta property="og:image" content="https://[YOUR-DOMAIN]/assets/hero-preview.webp" />
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <script src="js/config.js" defer></script>
+  <script src="js/features.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/interactive.js" defer></script>
+  <script src="js/effects.js" defer></script>
+</head>
+
+<body>
+  <div id="site-header"></div>
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <p class="badge">
+          <i></i> Windows <span data-config="architecture"></span> desktop app
+        </p>
+        <h1>Download videos.<br />Without the hassle.</h1>
+        <!-- Replace with a headline that fits your app -->
+        <p class="lead">
+          Vidmate is a Windows desktop app for saving supported videos. Paste
+          a link, pick your options, and download, all in one simple window.
+        </p>
+        <a class="btn btn-lg" href="Vidmate.exe" data-download aria-live="polite"><span>↓ Download for
+            Windows</span></a>
+        <p class="meta">
+          <span data-config="windowsVersion"></span> •
+          <span data-config="architecture"></span> • <span data-config="fileSize"></span>
+          <!-- <span data-config="fileSize"></span> -->
+        </p>
+        <p class="meta" data-os></p>
+        <div class="shot" role="region" aria-roledescription="carousel" aria-label="Vidmate app screenshots"
+          aria-describedby="gallery-help">
+          <span id="gallery-help" class="visually-hidden">Screenshots slide from right to left. Pause the movement using the button below. Select a screenshot to view it full size.</span>
+          <div class="app-gallery">
+            <div class="gallery-track" id="gallery-track">
+              <div class="gallery-set" role="group" aria-label="Screenshots">
+                <button class="gallery-image" type="button" aria-label="Enlarge Vidmate home screen preview"
+                  aria-haspopup="dialog" data-full-image="assets/copilot-image-af9ad4.png">
+                  <img src="assets/copilot-image-af9ad4.png" alt="Vidmate home screen with paste-link field and download presets" decoding="async" />
+                </button>
+                <button class="gallery-image" type="button" aria-label="Enlarge Vidmate download history preview"
+                  aria-haspopup="dialog" data-full-image="assets/copilot-image-c97954.png">
+                  <img src="assets/copilot-image-c97954.png" alt="Vidmate download history with saved videos and playback buttons" decoding="async" />
+                </button>
+                <button class="gallery-image" type="button" aria-label="Enlarge Vidmate settings preview"
+                  aria-haspopup="dialog" data-full-image="assets/copilot-image-644cb8.png">
+                  <img src="assets/copilot-image-644cb8.png" alt="Vidmate settings for download location, engine, and preferences" decoding="async" />
+                </button>
+              </div>
+              <div class="gallery-set" aria-hidden="true" inert>
+                <button class="gallery-image" type="button" tabindex="-1" data-full-image="assets/copilot-image-af9ad4.png">
+                  <img src="assets/copilot-image-af9ad4.png" alt="" decoding="async" />
+                </button>
+                <button class="gallery-image" type="button" tabindex="-1" data-full-image="assets/copilot-image-c97954.png">
+                  <img src="assets/copilot-image-c97954.png" alt="" decoding="async" />
+                </button>
+                <button class="gallery-image" type="button" tabindex="-1" data-full-image="assets/copilot-image-644cb8.png">
+                  <img src="assets/copilot-image-644cb8.png" alt="" decoding="async" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-dots" aria-hidden="true">
+            <span class="gallery-dot is-active"></span>
+            <span class="gallery-dot"></span>
+            <span class="gallery-dot"></span>
+          </div>
+          <div class="gallery-controls">
+            <button class="gallery-toggle" type="button" aria-controls="gallery-track" aria-pressed="false">Pause screenshot movement</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="image-viewer" aria-label="Expanded screenshot">
+      <button class="image-viewer-close" type="button" aria-label="Close expanded screenshot">&times;</button>
+      <img alt="" />
+    </dialog>
+
+    <section class="wrap reveal">
+      <h2>How it works</h2>
+      <p class="muted" style="margin-bottom: 24px">
+        Three steps from link to saved file. Select a step to see more.
+      </p>
+      <div data-steps></div>
+    </section>
+
+    <section class="wrap reveal">
+      <h2>Everything you need to download</h2>
+      <p class="muted" style="margin-bottom: 24px">
+        Select a feature to learn more.
+      </p>
+      <div class="grid" data-features-grid></div>
+    </section>
+
+    <section class="wrap reveal">
+      <h2>Why you can trust this download</h2>
+      <ul class="trust">
+        <li>HTTPS website</li>
+        <li>Version information</li>
+        <li>Release notes</li>
+        <li>SHA-256 checksum</li>
+      </ul>
+      <p class="muted small" style="margin-top: 16px">
+        Only list checks you actually provide. We make no guarantee about
+        third-party scanners.
+      </p>
+    </section>
+
+    <div class="ad-slot" aria-label="Advertisement"></div>
+
+    <section class="wrap cta reveal">
+      <h2>Ready to try it?</h2>
+      <a class="btn btn-lg" href="Vidmate.exe" data-download aria-live="polite"><span>↓ Download for
+          Windows</span></a>
+      <p class="meta">
+        Use only for content you have the right to download. See the
+        <a href="terms.html">Terms</a>.
+      </p>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script>
+    (function () {
+      var viewer = document.querySelector(".image-viewer");
+      var viewerImage = viewer.querySelector("img");
+      var closeButton = viewer.querySelector(".image-viewer-close");
+      var galleryTrack = document.querySelector(".gallery-track");
+      var gallery = document.querySelector(".app-gallery");
+      var galleryToggle = document.querySelector(".gallery-toggle");
+      var galleryDots = Array.from(document.querySelectorAll(".gallery-dot"));
+
+      function updateActiveDot(index) {
+        galleryDots.forEach(function (dot, dotIndex) {
+          var active = dotIndex === index;
+          dot.classList.toggle("is-active", active);
+          if (active) dot.setAttribute("aria-current", "true");
+          else dot.removeAttribute("aria-current");
+        });
+      }
+
+      galleryToggle.addEventListener("click", function () {
+        var paused = galleryToggle.getAttribute("aria-pressed") !== "true";
+        galleryToggle.setAttribute("aria-pressed", String(paused));
+        gallery.classList.toggle("gallery-paused", paused);
+        galleryToggle.textContent = paused ? "Resume screenshot movement" : "Pause screenshot movement";
+      });
+
+      document.querySelectorAll(".gallery-image").forEach(function (button) {
+        if (button.closest(".gallery-set[aria-hidden='true']")) return;
+        button.addEventListener("click", function () {
+          var thumbnail = button.querySelector("img");
+          viewerImage.src = button.dataset.fullImage;
+          viewerImage.alt = thumbnail.alt;
+          viewer.showModal();
+        });
+      });
+
+      var dotTimer = window.setInterval(function () {
+        var animation = galleryTrack.getAnimations()[0];
+        if (!animation) return;
+        var duration = animation.effect.getComputedTiming().duration;
+        var progress = ((Number(animation.currentTime) || 0) % duration) / duration;
+        updateActiveDot(Math.floor(progress * galleryDots.length) % galleryDots.length);
+      }, 160);
+      window.addEventListener("pagehide", function () {
+        window.clearInterval(dotTimer);
+      }, { once: true });
+
+      closeButton.addEventListener("click", function () {
+        viewer.close();
+      });
+
+      viewer.addEventListener("click", function (event) {
+        if (event.target === viewer) viewer.close();
+      });
+    })();
+  </script>
+</body>
+
+</html>
